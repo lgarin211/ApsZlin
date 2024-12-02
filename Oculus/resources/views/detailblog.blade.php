@@ -52,7 +52,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="blog.html">
+                  <a href="/blogd">
                     <img src="images/icons/white/blog.png" alt="" title="" />
                     <span>Blog</span>
                   </a>
@@ -287,7 +287,7 @@
               <div class="navbarpages navbarpagesbg">
                 <div class="navbar_left">
                   <div class="logo_text">
-                    <a href="blog.html" class="backto">
+                    <a href="/blogd" class="backto">
                         <img src="images/icons/white/back.png" alt="" title="" style="width: 30dvw">
                       </a>
                   </div>

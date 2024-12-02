@@ -312,34 +312,39 @@
               <!-- Slider -->
               <div class="swiper-container slidertoolbar">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide" style="background-image:url(images/slide1.jpg);">
-                    <div class="slider_trans">
-                      <div class="slider-caption">
-                        <span class="subtitle" data-swiper-parallax="-60%">CREATIVE SOLUTION</span>
-                        <h2 data-swiper-parallax="-100%">FOR MOBILE PROJECTS</h2>
-                        <p data-swiper-parallax="-30%">Design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
+                    <!-- Slide 1: Proklamasi Kemerdekaan -->
+                    <div class="swiper-slide" style="background-image:url('https://img.antarafoto.com/cache/1200x782/1945/08/17/proklamasi-kemerdekaan-indonesia-15st0-dom.jpg');">
+                      <div class="slider_trans">
+                        <div class="slider-caption">
+                          <span class="subtitle" data-swiper-parallax="-60%">17 Agustus 1945 - Proklamasi Kemerdekaan</span>
+                          <h2 data-swiper-parallax="-100%">PROKLAMASI KEMERDEKAAN</h2>
+                          <p data-swiper-parallax="-30%">Pada 17 Agustus 1945, Soekarno dan Hatta atas nama bangsa Indonesia memproklamasikan kemerdekaan di Jalan Pegangsaan Timur No. 56, Jakarta.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 2: Peristiwa Rengasdengklok -->
+                    <div class="swiper-slide" style="background-image:url('https://sma13smg.sch.id/wp-content/uploads/2022/08/presiden-soekarno-di-rengasdengklok.jpg');">
+                      <div class="slider_trans">
+                        <div class="slider-caption">
+                          <span class="subtitle" data-swiper-parallax="-60%">16 Agustus 1945 - Peristiwa Rengasdengklok</span>
+                          <h2 data-swiper-parallax="-100%">RENGASDENGKLOK</h2>
+                          <p data-swiper-parallax="-30%">Para pemuda mendesak Soekarno dan Hatta untuk segera memproklamasikan kemerdekaan tanpa menunggu izin dari Jepang. Mereka dibawa ke Rengasdengklok untuk menjauhkan mereka dari pengaruh Jepang.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 3: Rapat BPUPKI dan PPKI -->
+                    <div class="swiper-slide" style="background-image:url('https://cdn.grid.id/crop/0x0:0x0/700x465/smart/filters:format(webp)/photo/2023/07/14/fotojet-2023-07-14t093346131-20230714011927.jpg');">
+                      <div class="slider_trans">
+                        <div class="slider-caption">
+                          <span class="subtitle" data-swiper-parallax="-60%">1945 - Rapat BPUPKI dan PPKI</span>
+                          <h2 data-swiper-parallax="-100%">BPUPKI DAN PPKI</h2>
+                          <p data-swiper-parallax="-30%">BPUPKI dan PPKI merancang dasar negara dan konstitusi. PPKI juga mempersiapkan langkah konkret untuk mendirikan pemerintahan Indonesia setelah kemerdekaan.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide" style="background-image:url(images/slide2.jpg);">
-                    <div class="slider_trans">
-                      <div class="slider-caption">
-                        <span class="subtitle" data-swiper-parallax="-60%">MULTIPURPOSE DESIGNS</span>
-                        <h2 data-swiper-parallax="-100%">WITH BEAUTIFUL</h2>
-                        <p data-swiper-parallax="-30%">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide" style="background-image:url(images/slide3.jpg);">
-                    <div class="slider_trans">
-                      <div class="slider-caption">
-                        <span class="subtitle" data-swiper-parallax="-60%">WEB AND NATIVE</span>
-                        <h2 data-swiper-parallax="-100%">READY FOR APPS</h2>
-                        <p data-swiper-parallax="-30%">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
