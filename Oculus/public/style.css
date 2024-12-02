@@ -25,7 +25,7 @@ Template:	BLIX - Mobile HTML Template
     7-4. MUSIC LIST DESIGN LAYOUT
 8. POPUPS
 9. SHOP LAYOUT
-     9-1. SHOP ITEM PAGE 
+     9-1. SHOP ITEM PAGE
      9-2. SHOPPING CART - CECKOUT
      9-3. SUCCESS PAGE
 10. PHOTO GALLERY
@@ -43,7 +43,7 @@ Template:	BLIX - Mobile HTML Template
 
 /*===============================================*/
 /* 2. GENERAL		 						 */
-/*===============================================*/	
+/*===============================================*/
 html,
 body {
 position: relative;
@@ -64,13 +64,13 @@ overflow: hidden;
 font-weight:300;
 }
 
-.clear{ 
-clear:both; 
+.clear{
+clear:both;
 display:block;
 }
-.clearleft{ 
-clear:both; 
-float:left; 
+.clearleft{
+clear:both;
+float:left;
 display:block;
 }
 a {
@@ -99,9 +99,9 @@ text-transform:uppercase;
 line-height:30px;
 }
 .videocontainer{
-max-width:100%; 
-padding:0; 
-display: block; 
+max-width:100%;
+padding:0;
+display: block;
 margin:0;
 }
 #mobile_wrap{
@@ -183,7 +183,7 @@ width:50%;
 }
 /*===============================================*/
 /* 3. H TITLES		 						 */
-/*===============================================*/	
+/*===============================================*/
 h1, h2, h3, h4, h5, h6{
 	font-weight:300;
 	letter-spacing:-0.5px;
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
 	font-size:60px;
-	
+
 }
 h2{
 	font-size:26px;
@@ -262,7 +262,7 @@ width:100%;
 height:70px;
 z-index:999999;
 }
-/* HEADER LEFT */	
+/* HEADER LEFT */
 .navbar_left{
 float:left;
 width:40%;
@@ -273,7 +273,7 @@ display:inline-block;
 max-width:100%;
 padding:8px 0 0 0;
 }
-.logo_text{ 
+.logo_text{
 font-size:34px;
 line-height:70px;
 font-weight:900;
@@ -281,15 +281,15 @@ font-weight:900;
 .logo_text a{
 color:#ffffff;
 }
-.logo_text a span{ 
+.logo_text a span{
 color:#0be0af;
 }
-.logo_image a img{ 
+.logo_image a img{
 display:inline-block;
 max-width:17%;
 padding:23px 0 0 0;
 }
-/* HEADER CENTER */	
+/* HEADER CENTER */
 .navbar_center{
 float:left;
 width:46%;
@@ -307,7 +307,7 @@ font-weight:300;
 display:inline-block;
 color:#FFFFFF;
 }
-/* HEADER RIGHT */	
+/* HEADER RIGHT */
 .navbar_right{
 float:right;
 width:55px;
@@ -326,16 +326,16 @@ right:0;
 font-size:10px;
 width:15px;
 height:15px;
-background-color:#445cfd;
+background-color:#FF2929;
 color:#fff;
--webkit-border-radius:50%; 
--moz-border-radius:50%;  
-border-radius:50%; 
+-webkit-border-radius:50%;
+-moz-border-radius:50%;
+border-radius:50%;
 text-align:center;
 line-height:15px;
--webkit-box-shadow: 0px 0px 4px 0px #303030; 
+-webkit-box-shadow: 0px 0px 4px 0px #303030;
 -moz-box-shadow:    0px 0px 4px 0px #303030;
-box-shadow:         0px 0px 4px 0px #303030; 
+box-shadow:         0px 0px 4px 0px #303030;
 }
 .navbar_right img{
 display:inline-block;
@@ -343,13 +343,13 @@ max-width:55%;
 padding:12px 0 0 0;
 }
 .navbarpages.navbarpagesbg{
-background-color:#445cfd;	
+background-color:#FF2929;
 }
 /*===============================================*/
 /* 5. CUSTOM BUTTONS */
-/*===============================================*/	
+/*===============================================*/
 a.button_full{
-width:100%; 
+width:100%;
 display:inline-block;
 padding:20px 0;
 margin:0 auto 20px auto;
@@ -357,9 +357,9 @@ font-size:18px;
 text-align:center;
 }
 a.button_small{
-background-color:#0be0af; 
+background-color:#0be0af;
 display:inline-block;
-color:#222222; 
+color:#222222;
 padding:10px 20px;
 text-align:center;
 -webkit-appearance: none;
@@ -405,7 +405,7 @@ color: #222222;
 }
 .btyellow{
 background-color:#0be0af;
-color:#222222; 
+color:#222222;
 }
 .btmint{
 background-color:#61bb7e;
@@ -413,7 +413,7 @@ color:#fff;
 }
 /*===============================================*/
 /* 6. LEFT AND RIGHT SLIDE PANELS */
-/*===============================================*/	
+/*===============================================*/
 /* === Panels === */
 .panel-overlay {
   position: absolute;
@@ -427,7 +427,7 @@ color:#fff;
   display: none;
 }
 .panel-overlay.active{
-  
+
 }
 .panel {
 z-index: 1000;
@@ -448,10 +448,10 @@ transition-duration: 400ms;
 color:#222222;
 }
 .panel-left, .pagepanel{
-background-color:#445cfd;
+background-color:#FF2929;
 }
 .panel-right{
-background-color:#445cfd;
+background-color:#FF2929;
 }
 .panel.panel-left.panel-reveal {
   left: -85%;
@@ -597,7 +597,7 @@ line-height:30px;
 text-align:center;
 -webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;
 background-color:#eaca02;
-color:#445cfd;
+color:#FF2929;
 }
 .user-nav ul li a{
 font-size:14px;
@@ -791,7 +791,7 @@ padding:5px 0 0 20px;
 .tc { text-align: center; }
 /*===============================================*/
 /* 7. PAGES LAYOUT GENERAL */
-/*===============================================*/	
+/*===============================================*/
 /* === Views === */
 .views,
 .view {
@@ -838,18 +838,18 @@ body.panel-closing .views {
   transition-property: transform;
 }
 .homepage{
-background-color:#445cfd;
+background-color:#FF2929;
 }
 #pages_maincontent{
 width:100%;
 padding:0 0 30px 0;
 margin:0px;
-position: absolute; 
-top: 70px; 
-left: 0; 
-right: 0; 
+position: absolute;
+top: 70px;
+left: 0;
+right: 0;
 bottom: 0px;
-overflow: scroll; 
+overflow: scroll;
 -webkit-overflow-scrolling: touch;
 }
 #pages_maincontent p{
@@ -887,7 +887,7 @@ right:0px;
 overflow: hidden;
 z-index: 999999;
 height:60px;
-background-color:#0be0af;	
+background-color:#0be0af;
 width:20%;
 }
 .bottom_menu_open a{
@@ -943,13 +943,13 @@ height:auto;
 .swiper-slide {
 width:100%;
 text-align:left;
--webkit-background-size: 100%; 
+-webkit-background-size: 100%;
 -moz-background-size: 100%;
 -o-background-size: 100%;
 background-size: 100%;
 -webkit-background-size: cover;
 -moz-background-size: cover;
--o-background-size: cover; 
+-o-background-size: cover;
 background-size: cover;
 background-position:center center;
 }
@@ -962,9 +962,9 @@ float:left;
 height:auto;
 text-align:center;
 background-color:#fff;
--webkit-border-radius: 6px; 
--moz-border-radius: 6px; 
-border-radius: 6px; 
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
 }
 .toolbar-icon a img{
 display:block;
@@ -995,7 +995,7 @@ z-index:99999;
 padding:0 2%;
 }
 .slidertoolbar .slider-caption{
-bottom:60%;	
+bottom:60%;
 }
 .slider-caption h2{
 width:100%;
@@ -1007,7 +1007,7 @@ font-weight:900;
 letter-spacing:-1px;
 color:#fff;
 line-height:50px;
-} 
+}
 .slider-caption span.subtitle{
 width:100%;
 margin:0;
@@ -1015,9 +1015,9 @@ font-size:12px;
 padding:5px;
 font-weight:300;
 color:#fff;
-background-color:#445cfd;
+background-color:#FF2929;
 display:inline;
-} 
+}
 .slider-caption p{
 color:#ffffff;
 font-size:18px;
@@ -1050,11 +1050,11 @@ text-align:left;
 }
 .swiper-container .swiper-pagination-bullet-active {
 opacity: 1;
- border:1px solid #445cfd;
+ border:1px solid #FF2929;
 }
 .swiper-container-pages .swiper-pagination-bullet-active {
 opacity: 1;
-background: #445cfd;
+background: #FF2929;
 }
 .swiper-pagination-toolbar{
 position: absolute;
@@ -1106,14 +1106,14 @@ background: #000;
 	-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
 }
 .swiper-button-next{
-	background:url(images/nav-next.png) no-repeat center #445cfd; 
+	background:url(images/nav-next.png) no-repeat center #FF2929;
 	width: 40px;
     height: 40px;
 	bottom:22%;
 	right:2.5%;
 }
 .swiper-button-prev{
-	background:url(images/nav-prev.png) no-repeat center #445cfd; 
+	background:url(images/nav-prev.png) no-repeat center #FF2929;
 	width: 40px;
     height: 40px;
 	bottom:22%;
@@ -1263,9 +1263,9 @@ margin:auto;
 
 /* 7-4. MUSIC LIST DESIGN LAYOUT */
 
-.audiojs{ 
+.audiojs{
 width:100%;
-margin:auto; 
+margin:auto;
 box-shadow:none;
 background-image:none;
 }
@@ -1318,7 +1318,7 @@ line-height:30px;
 }
 /*===============================================*/
 /* 8. POPUPS */
-/*===============================================*/	
+/*===============================================*/
 .popup{
   position: absolute;
   left: 0;
@@ -1413,7 +1413,7 @@ right:0px;
 .close_popup_button a img{
 display:block;
 max-width:60%;
-margin:auto; 
+margin:auto;
 }
 /*===============================================*/
 /* 9. SHOP LAYOUT */
@@ -1884,11 +1884,11 @@ width:100%;
 clear:both;
 display:block;
 float:left;
-padding:15px 0; 
-margin:15px 0; 
+padding:15px 0;
+margin:15px 0;
 font-weight:normal;
 text-align:center;
-cursor:pointer; 
+cursor:pointer;
 font-size:14px;
 color:#FFFFFF;
 -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
@@ -1993,43 +1993,43 @@ display:inline-block;
 max-width:70%;
 }
 ul.photo_gallery_13, ul.photo_gallery_12, ul.photo_gallery_11{
-width:100%; 
-list-style:none; 
-padding:0px; 
+width:100%;
+list-style:none;
+padding:0px;
 margin:0 0 70px 0;
-float:left; 
+float:left;
 clear:both;
-} 
-ul.photo_gallery_13 li{ 
-width:33.3%; 
-padding:0; 
-float:left; 
-margin:0; 
 }
-ul.photo_gallery_13 li img{ 
-max-width:100%; 
-display:block; 
-}
-ul.photo_gallery_12 li{ 
-width:50%; 
-padding:0; 
-float:left;  
+ul.photo_gallery_13 li{
+width:33.3%;
+padding:0;
+float:left;
 margin:0;
 }
-ul.photo_gallery_12 li img{ 
-max-width:100%; 
+ul.photo_gallery_13 li img{
+max-width:100%;
 display:block;
 }
-ul.photo_gallery_11 li{ 
-width:100%; 
-padding:0; 
-float:left; 
+ul.photo_gallery_12 li{
+width:50%;
+padding:0;
+float:left;
+margin:0;
+}
+ul.photo_gallery_12 li img{
+max-width:100%;
+display:block;
+}
+ul.photo_gallery_11 li{
+width:100%;
+padding:0;
+float:left;
 margin:0;
 }
 ul.photo_gallery_11 li img{
-max-width:100%; 
+max-width:100%;
 display:block;
-} 
+}
 .photo-categories{
 width:90%;
 padding:0;
@@ -2058,7 +2058,7 @@ background-color:#0be0af;
 	width:100%;
 	overflow:hidden;
 	position:relative;
-}	
+}
 .posts li{
 	width:100%;
 	display:block;
@@ -2234,18 +2234,18 @@ font-style:italic;
 
 /*===============================================*/
 /* 12. FORMS */
-/*===============================================*/	
+/*===============================================*/
 /* 12.1 LOGIN FORM */
 .loginform{
 width:90%;
 padding:0 0 15px 5%;
 }
 .loginform label.error{
-padding:0 0 20px 0; 
+padding:0 0 20px 0;
 margin:0px;
 line-height:10px;
-width:100%; 
-text-align:left; 
+width:100%;
+text-align:left;
 font-size:14px;
 color:#f65821;
 font-weight:400;
@@ -2253,8 +2253,8 @@ clear:both;
 float:left;
 }
 .loginform input.form_input{
-padding:10px 3%; 
-width:93%; 
+padding:10px 3%;
+width:93%;
 margin:0 0 15px 0;
 border-bottom:1px solid #d5d5d5;
 border-left:none;
@@ -2268,8 +2268,8 @@ color:#000000;
  background-color:#f5f5f5;
 }
 .loginform .form_select{
-padding:2% 3%; 
-width:100%; 
+padding:2% 3%;
+width:100%;
 margin:20px 0 10px 0;
 border-bottom:1px solid #d5d5d5;
 border-left:none;
@@ -2282,12 +2282,12 @@ background:url(images/dropdown.png) no-repeat right;
 .loginform .form_select option{
 padding:3px;
 }
-.loginform input.form_submit{ 
+.loginform input.form_submit{
 width:100%;
-padding:12px 0; 
-margin:10px 0 0 0; 
+padding:12px 0;
+margin:10px 0 0 0;
 text-align:center;
-cursor:pointer; 
+cursor:pointer;
 font-size:18px;
 font-weight:300;
 color:#222222;
@@ -2361,28 +2361,28 @@ padding:0 0 15px 0;
 }
 .contactform label{
 width:100%;
-padding:5px 0 3px 0; 
-display:block; 
+padding:5px 0 3px 0;
+display:block;
 font-size:16px;
 font-weight:700;
 }
 .contactform label.error{
-padding:0 0 10px 0; 
-width:100%; 
-text-align:left; 
+padding:0 0 10px 0;
+width:100%;
+text-align:left;
 font-size:14px;
 color:#f65821;
 font-weight:400;
 }
 .contactform input.form_input{
-padding:3%; 
-width:93%; 
+padding:3%;
+width:93%;
 margin:0 0 5px 0;
 border:1px solid #ddd;
 }
 /* --------Custom select input----------- */
 .selector_overlay{
-padding:0; 
+padding:0;
 width:100%;
 float:left;
 margin:0 0 5px 0;
@@ -2393,8 +2393,8 @@ background:url(images/dropdown.png) no-repeat top right;
 backface-visibility: hidden;
 }
 .selector_overlay select{
-padding:8px 0 8px 1%; 
-width:99.5%; 
+padding:8px 0 8px 1%;
+width:99.5%;
 margin:0 0 5px 0;
 border:1px solid #ddd;
 box-shadow: none;
@@ -2408,8 +2408,8 @@ appearance: none;
 	color:#000;
 }
 .custom_select .item-after{
-padding:8px 0 8px 2%; 
-width:97%; 
+padding:8px 0 8px 2%;
+width:97%;
 float:left;
 margin:0 0 5px 0;
 overflow: hidden;
@@ -2421,7 +2421,7 @@ backface-visibility: hidden;
 }
 
 .navbar, .toolbar, .subnavbar {
-    background: #445cfd;
+    background: #FF2929;
 }
 .navbar a.link, .toolbar a.link, .subnavbar a.link {
 	color:#fff;
@@ -2429,7 +2429,7 @@ backface-visibility: hidden;
 .picker-modal .toolbar {
     position: relative;
     width: 100%;
-    background: #445cfd;
+    background: #FF2929;
 }
 .picker-modal .toolbar a{
 	color:#fff;
@@ -2443,7 +2443,7 @@ backface-visibility: hidden;
     top: auto;
     height: 1px;
     width: 100%;
-    background-color: #445cfd;
+    background-color: #FF2929;
     display: block;
     z-index: 15;
     -webkit-transform-origin: 50% 100%;
@@ -2458,7 +2458,7 @@ backface-visibility: hidden;
     right: auto;
     height: 1px;
     width: 100%;
-    background-color: #445cfd;
+    background-color: #FF2929;
     display: block;
     z-index: 15;
     -webkit-transform-origin: 50% 0%;
@@ -2540,21 +2540,21 @@ display:inline-block;
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
 }
 .contactform textarea.form_textarea{
-padding:3%; 
-width:93%; 
-height:50px; 
+padding:3%;
+width:93%;
+height:50px;
 margin:0 0 5px 0;
 border:1px solid #ddd;
 font-family: 'Roboto', sans-serif;
 font-size:14px;
 }
-.contactform input.form_submit{ 
+.contactform input.form_submit{
 width:100%;
-padding:4% 0 4% 0; 
-margin:10px 0 0 0; 
+padding:4% 0 4% 0;
+margin:10px 0 0 0;
 font-weight:normal;
 text-align:center;
-cursor:pointer; 
+cursor:pointer;
 font-size:20px;
 background-color:#0be0af;
 color:#222222;
@@ -2567,12 +2567,12 @@ h2#Note{
 
 /*===============================================*/
 /* 13. TABS & ACCORDION & TABLES */
-/*===============================================*/	
+/*===============================================*/
 /* Tabs
 /*------------------------------------------*/
 .tabs {
 	display: flex;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 	width:100%;
 }
 .tabs--photos{
@@ -2664,7 +2664,7 @@ h2#Note{
   max-height: 300px;
 }
 .accordion__input:checked ~ .accordion__label,  .accordion__label:hover{
-  background-color: #445cfd;
+  background-color: #FF2929;
   color:#fff;
 }
 .accordion__label:hover span{
@@ -2729,7 +2729,7 @@ h2#Note{
   max-height: 300px;
 }
 .toggle__input:checked ~ .toggle__label,  .toggle__label:hover{
-  background-color: #445cfd;
+  background-color: #FF2929;
   color:#fff;
 }
 .toggle__label:hover span{
@@ -2754,36 +2754,36 @@ h2#Note{
 }
 
 /* TABLES */
-ul.responsive_table{ 
-width:100%; 
-float:left; 
-clear:both; 
-margin:0 0 10px 0; 
-padding:0px; 
+ul.responsive_table{
+width:100%;
+float:left;
+clear:both;
+margin:0 0 10px 0;
+padding:0px;
 list-style:none;
 }
 li.table_row{
-width:100%; 
-float:left; 
-clear:both; 
+width:100%;
+float:left;
+clear:both;
 line-height:30px;
-padding:0px; 
+padding:0px;
 list-style:none;
 margin:0 0 1px 0;
 background-color:#f5f5f4;
 }
 .table_section_small{
-width:14%; 
-float:left; 
-padding:0 0 0 2%;
-}
-.table_section{ 
-width:40%; 
+width:14%;
 float:left;
 padding:0 0 0 2%;
 }
-.table_section_14{ 
-width:23%; 
+.table_section{
+width:40%;
+float:left;
+padding:0 0 0 2%;
+}
+.table_section_14{
+width:23%;
 float:left;
 padding:0 0 0 2%;
 text-align:center;
@@ -2808,7 +2808,7 @@ background-color:#94cb01;
 color:#FFFFFF;
 font-size:12px;
 -moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
-}  
+}
 ul.responsive_table li:first-child{
 background-color:#0be0af;
 color:#222222;
@@ -2818,10 +2818,10 @@ color:#222222;
 }
 /*===============================================*/
 /* 14. MEDIA QUERIES */
-/*===============================================*/	
+/*===============================================*/
 /* -------------SMALL DESKTOP--------- */
 @media screen and (max-width: 1200px) {
-.logo_image a img{ 
+.logo_image a img{
 max-width:22%;
 padding:25px 0 0 0;
 }
@@ -2848,9 +2848,9 @@ max-width:20%;
 height:60px;
 }
 #pages_maincontent{
-top: 60px; 
+top: 60px;
 }
-.logo_image a img{ 
+.logo_image a img{
 max-width:30%;
 padding:22px 0 0 0;
 }
@@ -2861,7 +2861,7 @@ line-height:22px;
 blockquote span{
 font-size:14px;
 line-height:22px;
-} 
+}
 ul.features_list li{
 width:96%;
 clear:both;
@@ -2898,7 +2898,7 @@ padding:0px;
 max-width:60%;
 }
 .slidertoolbar .slider-caption{
-bottom:40%;	
+bottom:40%;
 }
 .swiper-container {
 height: 70%;
@@ -2906,7 +2906,7 @@ height: 70%;
 .toolbar-icon a{
 width:31%;
 margin:1.1%;
-padding:5% 0; 
+padding:5% 0;
 }
 
 }
@@ -2925,18 +2925,18 @@ width:40px;
 height:40px;
 margin:0;
 }
-.logo_text{ 
+.logo_text{
 font-size:22px;
 line-height:50px;
 }
-.logo_image a img{ 
+.logo_image a img{
 max-width:50%;
 padding:17px 0 0 0;
 }
 
-/* HEADER RIGHT */	
+/* HEADER RIGHT */
 #pages_maincontent{
-top: 50px; 
+top: 50px;
 }
 .panel {
 width: 85%;
@@ -2959,7 +2959,7 @@ padding:0 4%;
 .slider-caption h2{
 font-size:24px;
 line-height:30px;
-} 
+}
 .slider-caption p{
 font-size:14px;
 line-height:18px;
@@ -2971,7 +2971,7 @@ line-height:18px;
 	bottom:22%;
 	right:3%;
 }
-.swiper-button-prev{ 
+.swiper-button-prev{
 	width: 21px;
     height: 21px;
 	bottom:22%;
@@ -3000,11 +3000,11 @@ max-width:40%;
 }
 /* -----------------SMALL MOBILE---------------- */
 @media screen and (max-width: 470px) {
-.logo_image a img{ 
+.logo_image a img{
 display:inline-block;
 max-width:60%;
 padding:17px 0 0 0;
-}	
+}
 .gallery_switch a{
 width:8%;
 padding:0px 5px;
@@ -3021,7 +3021,7 @@ padding:13px 0 0 0;
 }
 }
 /* -----------------SMALLER MOBILE---------------- */
-@media screen and (max-width: 360px) {	
+@media screen and (max-width: 360px) {
 .gallery_switch a{
 width:10%;
 padding:0px 3px;
