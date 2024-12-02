@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,28 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/blogd', function () {
+    $allblog=DB::table('posts')->get();
+    // dump($allblog);
+    return view('bloglist',compact('allblog'));
+});
+Route::get('/bloge', function () {
+    if (isset($_GET['id'])) {
+        $id=$_GET['id'];
+        $blog=DB::table('posts')->where('id',$id)->first();
+        // dump($blog);
+        return view('detailblog',compact('blog'));
+    }else{
+        return back();
+    }
+});
+Route::get('/tes', function () {
+    return view('tesrun');
+});
+
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
