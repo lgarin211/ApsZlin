@@ -411,7 +411,7 @@
                         <img src="images/icons/blue/tables.png" alt="" title="" />
                         <span>Materi</span>
                     </a>
-                    <a href="#">
+                    <a href="/gamepot">
                         <img src="images/icons/blue/blog.png" alt="" title="" />
                         <span>Game's</span>
                     </a>
