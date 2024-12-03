@@ -294,12 +294,12 @@
                 </div>
               </div>
               <div id="pages_maincontent">
-                <h2 class="blog_title">{{$blog->title}}</h2>
+                <h2 class="blog_title">{{$blog->judul}}</h2>
                 <!-- Slider -->
                 <div class="page_single layout_fullwidth_padding">
                   <div class="post_single">
                     {!!
-                        $blog->body
+                        $blog->isi
                     !!}
                   </div>
                 </div>

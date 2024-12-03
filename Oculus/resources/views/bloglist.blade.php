@@ -321,14 +321,14 @@
                           <div class="swiper-slide swipeout-content item-content">
                             <div class="post_entry">
                               <div class="post_thumb">
-                                <img src="{{url('/storage/'.$m->image)}}" alt="" title="" />
+                                <img src="{{url('/storage/'.$m->poster)}}" alt="" title="" />
                               </div>
                               <div class="post_details">
                                 <div class="post_category">
-                                  <a href="{{url('/bloge?id='.$m->id)}}">{{$m->title}}</a>
+                                  <a href="{{url('/bloge?id='.$m->id)}}">{{$m->judul}}</a>
                                 </div>
                                 <h2>
-                                  <a href="{{url('/bloge?id='.$m->id)}}">{{$m->excerpt}}.</a>
+                                  <a href="{{url('/bloge?id='.$m->id)}}">{{$m->simply}}.</a>
                                 </h2>
                               </div>
                               <div class="post_swipe">
@@ -338,7 +338,7 @@
                           </div>
                           <div class="swiper-slide swipeout-actions-right">
                             <a href="{{url('/bloge?id='.$m->id)}}" class="action1">
-                              <img src="images/icons/black/message.png" alt="" title="" />
+                              <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linetype-icon/eye-43.png" alt="" title="" />
                             </a>
 
                           </div>

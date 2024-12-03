@@ -19,14 +19,14 @@ Route::get('/', function () {
 });
 
 Route::get('/blogd', function () {
-    $allblog=DB::table('posts')->get();
+    $allblog=DB::table('Materis')->get();
     // dump($allblog);
     return view('bloglist',compact('allblog'));
 });
 Route::get('/bloge', function () {
     if (isset($_GET['id'])) {
         $id=$_GET['id'];
-        $blog=DB::table('posts')->where('id',$id)->first();
+        $blog=DB::table('Materis')->where('id',$id)->first();
         // dump($blog);
         return view('detailblog',compact('blog'));
     }else{
