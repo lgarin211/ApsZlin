@@ -34,7 +34,9 @@ Route::get('/bloge', function () {
     }
 });
 Route::get('/tes', function () {
-    return view('tesrun');
+    $quiz=DB::table('Exam_Lis')->get();
+    // dd($quiz);
+    return view('tesrun',compact('quiz'));
 });
 
 Route::get('/gamepot', function () {
