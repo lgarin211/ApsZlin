@@ -14,6 +14,7 @@
             display: flex;
             flex-direction: column;
             height: 100dvh !important;
+            width: 100dvw !important;
             overflow: hidden !important;
         }
     </style>
