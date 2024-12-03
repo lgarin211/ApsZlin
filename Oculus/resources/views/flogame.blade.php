@@ -39,20 +39,22 @@
         }
     </style>
 </head>
-<body class="row">
-    <!-- Selamat bermain -->
-    <div class="col-12 text-center mt-3">
-        <h1>Selamat Bermain!</h1>
-    </div>
+<body>
+    <div class="row">
+            <!-- Selamat bermain -->
+        <div class="col-12 text-center mt-3">
+            <h1>Selamat Bermain!</h1>
+        </div>
 
-    <!-- Halaman permainan -->
-    <div class="col-12" style="height: 90dvh !important;">
-        {!! $playgame->game_sectoryzer !!}
-    </div>
+        <!-- Halaman permainan -->
+        <div class="col-12" style="height: 90dvh !important;">
+            {!! $playgame->game_sectoryzer !!}
+        </div>
 
-    <!-- Footer dengan tombol kembali -->
-    <div class="footer col-12 text-center fixed-bottom mb-4">
-        <a href="/gamepot" class="btn btn-warning">Kembali ke Pages ListGame</a>
+        <!-- Footer dengan tombol kembali -->
+        <div class="footer col-12 text-center fixed-bottom mb-4">
+            <a href="/gamepot" class="btn btn-warning">Kembali ke Pages ListGame</a>
+        </div>
     </div>
 </body>
 </html>
