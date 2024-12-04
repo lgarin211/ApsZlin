@@ -1,29 +1,38 @@
-// Update the VARIANT arg in docker-compose.yml to pick a PHP version
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/php-7
 {
-	"name": "PHP & MariaDB (Community)",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
-	"workspaceFolder": "/workspace",
+	"name": "PHP 7",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "php",
+    // Use 'settings' to set *default* container specific settings.json values on container create.
+	// You can edit these settings after create using File > Preferences > Settings > Remote.
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "phpSniffer.executablesFolder": "./vendor/bin/",
+        "phpSniffer.run": "onSave"
+    },
 
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {		
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-				"xdebug.php-debug",
-				"bmewburn.vscode-intelephense-client",
-				"mrmlnc.vscode-apache"
-			]
-		}
-	},
+	// Uncomment the next line if you want to publish any ports.
+	"forwardPorts": [8000],
 
-	// For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
-	"forwardPorts": [8080, 3306],
+	// Uncomment the next line to run commands after the container is created.
+	"postCreateCommand": "",
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
+	// Uncomment the next line to use a non-root user. On Linux, this will prevent
+	// new files getting created as root, but you may need to update the USER_UID
+	// and USER_GID in .devcontainer/Dockerfile to match your user if not 1000.
+	"runArgs": [
+					"-u", "vscode" ,
+				 	"-v", "${env:HOME}${env:USERPROFILE}/.ssh:/home/vscode/.ssh"
+			],
 
-	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+
+	// Add the IDs of extensions you want installed when the container is created in the array below.
+	"extensions": [
+                     "bmewburn.vscode-intelephense-client",
+                     "MehediDracula.php-namespace-resolver",
+                     "MS-vsliveshare.vsliveshare-pack",
+                     "EditorConfig.EditorConfig",
+                     "wongjn.php-sniffer"
+	]
 }
