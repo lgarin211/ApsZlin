@@ -29,13 +29,14 @@
     <style>
         .interacty_wrapper{
             height: 90dvh !important;
-            overflow: hidden !important;
+            overflow-x: hidden;
         }
         body {
             display: flex;
             flex-direction: column;
-            height: 100dvh !important;
-            overflow: hidden !important;
+            height: 100dvh;
+            width: 100dvw !important;
+            overflow-x: hidden !important;
         }
     </style>
 </head>
