@@ -8,14 +8,14 @@
     <style>
         .interacty_wrapper{
             height: 90dvh !important;
-            overflow: hidden !important;
+            overflow-x: hidden !important;
         }
         body {
             display: flex;
             flex-direction: column;
-            height: 100dvh !important;
+            height: 100dvh ;
             width: 100dvw !important;
-            overflow: hidden !important;
+            overflow-x: hidden !important;
         }
     </style>
 </head>
