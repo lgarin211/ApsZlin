@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <div class="row" style="height: 100dvh !important;width:100dvw !important;overflow:hidden !important">
+    <div class="row" style="height: 100dvh !important;width:100dvw !important;overflow-x:hidden !important">
             <!-- Selamat bermain -->
         <div class="col-12 text-center mt-3">
             <h1>Selamat Bermain!</h1>
