@@ -1,0 +1,10 @@
+{
+  "name": "Ubuntu with LAMPP",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {},
+  "extensions": [],
+  "postCreateCommand": "./setup-lampp.sh",
+  "remoteUser": "root"
+}
