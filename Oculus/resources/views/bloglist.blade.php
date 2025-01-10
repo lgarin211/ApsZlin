@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900" rel="stylesheet">
+
+    <style>
+      .no-click {
+          pointer-events: none;
+          filter: grayscale(100%);
+      }
+      </style>
   </head>
   <body id="mobile_wrap">
     <div class="panel-overlay"></div>
@@ -315,8 +322,17 @@
                   <ul class="posts">
 
 {{-- loop --}}
-                    @foreach ($allblog as $m)
-                    <li class="swipeout">
+                    @php
+                        if(session()->has('patcing')){
+                            $patcing = session('patcing');
+                        }else{
+                            session(['patcing' => 0]);
+                            $patcing = 0;
+                        }
+                    @endphp
+                    @foreach ($allblog as $key=>$m)
+                    @dump(($patcing < $key))
+                    <li class="swipeout @if($patcing < $key): no-click @endif">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide swipeout-content item-content">
                             <div class="post_entry">
@@ -325,10 +341,10 @@
                               </div>
                               <div class="post_details">
                                 <div class="post_category">
-                                  <a href="{{url('/bloge?id='.$m->id)}}">{{$m->judul}}</a>
+                                  <a href="{{url('/bloge?id='.$m->id.'&tag='.$key+1)}}">{{$m->judul}}</a>
                                 </div>
                                 <h2>
-                                  <a href="{{url('/bloge?id='.$m->id)}}">{{$m->simply}}.</a>
+                                  <a href="{{url('/bloge?id='.$m->id.'&tag='.$key+1)}}">{{$m->simply}}.</a>
                                 </h2>
                               </div>
                               <div class="post_swipe">
@@ -337,7 +353,7 @@
                             </div>
                           </div>
                           <div class="swiper-slide swipeout-actions-right">
-                            <a href="{{url('/bloge?id='.$m->id)}}" class="action1">
+                            <a href="{{url('/bloge?id='.$m->id.'&tag='.$key+1)}}" class="action1">
                               <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linetype-icon/eye-43.png" alt="" title="" />
                             </a>
 
@@ -361,5 +377,12 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.custom.js"></script>
+    <audio id="click-sound" src="https://www.myinstants.com/media/sounds/switch-sound.mp3"></audio>
+    <script>
+      document.addEventListener('click', function() {
+        var audio = document.getElementById('click-sound');
+        audio.play();
+      });
+    </script>
   </body>
 </html>

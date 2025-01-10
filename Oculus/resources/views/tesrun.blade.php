@@ -234,6 +234,13 @@
 
         loadQuestions();
     </script>
+        <audio id="click-sound" src="https://www.myinstants.com/media/sounds/switch-sound.mp3"></audio>
+    <script>
+      document.addEventListener('click', function() {
+        var audio = document.getElementById('click-sound');
+        audio.play();
+      });
+    </script>
 </body>
 
 </html>

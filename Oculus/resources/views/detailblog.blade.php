@@ -1,3 +1,12 @@
+@php
+    if(session()->has('patcing')){
+        session(['patcing' => $_GET['tag']]);
+    }else{
+        session(['patcing' => 0]);
+        $patcing = 0;
+    }
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -302,6 +311,9 @@
                         $blog->isi
                     !!}
                   </div>
+                  <div>
+                    <a href="{{url('/bloge?id='.$nextblog->id.'&tag='.$_GET['tag']+1)}}" class="btn col-12">Yuk Baca Materi Selanjutnya</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -310,9 +322,18 @@
       </div>
     </div>
 
+
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.custom.js"></script>
+    <audio id="click-sound" src="https://www.myinstants.com/media/sounds/switch-sound.mp3"></audio>
+    <script>
+      document.addEventListener('click', function() {
+        var audio = document.getElementById('click-sound');
+        audio.play();
+      });
+    </script>    
   </body>
 </html>

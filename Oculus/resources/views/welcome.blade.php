@@ -13,6 +13,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900" rel="stylesheet">
   </head>
   <body id="mobile_wrap">
+
+                    @php
+                        if(session()->has('patcing')){
+                            $patcing = session('patcing');
+                        }else{
+                            session(['patcing' => 0]);
+                            $patcing = 0;
+                        }
+                    @endphp
+
     {{-- <div class="info_popup">
 											<div class="close_info_popup">
 												<img src="images/icons/white/menu_close.png" alt="" title="" />
@@ -411,6 +421,7 @@
                         <img src="images/icons/blue/tables.png" alt="" title="" />
                         <span>Materi</span>
                     </a>
+                    @if($patcing > count($allblog))
                     <a href="/gamepot">
                         <img src="images/icons/blue/blog.png" alt="" title="" />
                         <span>Game's</span>
@@ -419,6 +430,7 @@
                         <img src="images/icons/blue/users.png" alt="" title="" />
                         <span>Ujian</span>
                     </a>
+                    @endif
                   </div>
                 </div>
               </div>
@@ -550,5 +562,12 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.custom.js"></script>
+    <audio id="click-sound" src="https://www.myinstants.com/media/sounds/switch-sound.mp3"></audio>
+    <script>
+      document.addEventListener('click', function() {
+        var audio = document.getElementById('click-sound');
+        audio.play();
+      });
+    </script>
   </body>
 </html>

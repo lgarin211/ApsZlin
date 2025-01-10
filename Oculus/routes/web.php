@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $allblog=DB::table('Materis')->get();
+    return view('welcome',compact('allblog'));
 });
 
 Route::get('/blogd', function () {
@@ -27,8 +28,9 @@ Route::get('/bloge', function () {
     if (isset($_GET['id'])) {
         $id=$_GET['id'];
         $blog=DB::table('Materis')->where('id',$id)->first();
+        $nextblog=DB::table('Materis')->where('id','>',$id)->first();
         // dump($blog);
-        return view('detailblog',compact('blog'));
+        return view('detailblog',compact('blog','nextblog'));
     }else{
         return back();
     }
