@@ -331,7 +331,7 @@
                         }
                     @endphp
                     @foreach ($allblog as $key=>$m)
-                    @dump(($patcing < $key))
+                    {{-- @dump(($patcing < $key)) --}}
                     <li class="swipeout @if($patcing < $key): no-click @endif">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide swipeout-content item-content">
@@ -384,5 +384,6 @@
         audio.play();
       });
     </script>
+    @include('vader.playmussic')
   </body>
 </html>

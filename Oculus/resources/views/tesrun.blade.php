@@ -64,6 +64,12 @@
                             </label>
                         </div>
                         <button type="submit" class="btn btn-primary">Mulai</button>
+
+                        <div>
+                            @if (session()->has('score')&&session('score')!=0)
+                                <h3>NILAI SEBELUMNYA {{session('score')}} </h3>
+                            @endif
+                        </div>
                     </form>
                 </div>
             </div>
@@ -191,11 +197,19 @@
                     score++;
                 }
             });
+            console.log(score*100/20);
+
+            // save score to session using fetch
+            fetch('/score?score=' + score*100/soallist.length)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                })
 
             Swal.fire({
                 icon: 'success',
                 title: 'Kuis Selesai',
-                text: `Terima kasih telah menyelesaikan kuis! Nilai Anda adalah ${score} dari ${soallist.length}.`,
+                text: `Terima kasih telah menyelesaikan kuis! Nilai Anda adalah ${score*100/soallist.length} dari ${score+'/'+soallist.length}.`,
             });
             console.log(jawabanuser);
 

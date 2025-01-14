@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    @include('vader.playmussic')
     <div class="container py-4">
         <!-- Section 1: Silahkan pilih game kesukaanmu -->
         <div class="row mb-3">
@@ -16,11 +17,11 @@
                 <div id="friendInput" class="mt-3" style="display: none;">
                     <textarea class="form-control" placeholder="Masukkan nama teman-teman lainnya..." rows="3"></textarea>
                     <hr class="col-12">
-        
+
                     <!-- Section 2: Grid dengan card game -->
                     <div class="row">
-                        
-                        @foreach ($gamedata as $game) 
+
+                        @foreach ($gamedata as $game)
                         <div class="col-12 col-md-4 mb-3">
                             <div class="card">
                                 <img src="https://awsimages.detik.net.id/community/media/visual/2019/11/26/02f2b5b1-7bcc-4481-9b9e-dbdb9c726924.jpeg?w=1200" class="card-img-top" alt="Poster Game">
@@ -58,5 +59,6 @@
         audio.play();
       });
     </script>
+
 </body>
 </html>

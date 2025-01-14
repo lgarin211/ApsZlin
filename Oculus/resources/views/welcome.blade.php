@@ -13,34 +13,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900" rel="stylesheet">
   </head>
   <body id="mobile_wrap">
-
-                    @php
-                        if(session()->has('patcing')){
-                            $patcing = session('patcing');
-                        }else{
-                            session(['patcing' => 0]);
-                            $patcing = 0;
-                        }
-                    @endphp
-
-    {{-- <div class="info_popup">
-											<div class="close_info_popup">
-												<img src="images/icons/white/menu_close.png" alt="" title="" />
-											</div>
-											<h2>Save this WEB APP</h2>
-											<h3>on your mobile</h3>
-											<i>Next time you enter load it directly from your mobile home screen</i>
-											<p>
-												<span>iOS</span>: Tap the Share button on the menu bar. It’s an icon on the right side that’s a box with an arrow sticking out from it. Tap on Add to Home Screen.
-
-
-											</p>
-											<p>
-												<span>Android</span>: Tap the browser menu button and tap Add to homescreen
-
-
-											</p>
-										</div> --}}
+    @php
+        if(session()->has('patcing')){
+            $patcing = session('patcing');
+        }else{
+            session(['patcing' => 0]);
+            $patcing = 0;
+        }
+    @endphp
     <div class="panel-overlay"></div>
     <div class="panel panel-left panel-reveal">
       <!-- Slider -->
@@ -48,102 +28,6 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <nav class="main_nav_underline">
-              {{-- <ul>
-																<li>
-																	<a href="index.html">
-																		<img src="images/icons/white/home.png" alt="" title="" />
-																		<span>Home</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="about.html">
-																		<img src="images/icons/white/mobile.png" alt="" title="" />
-																		<span>About</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="features.html">
-																		<img src="images/icons/white/features.png" alt="" title="" />
-																		<span>Features</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" data-popup=".popup-login" class="open-popup">
-																		<img src="images/icons/white/lock.png" alt="" title="" />
-																		<span>Login</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="team.html">
-																		<img src="images/icons/white/users.png" alt="" title="" />
-																		<span>Team</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="blog.html">
-																		<img src="images/icons/white/blog.png" alt="" title="" />
-																		<span>Blog</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="photos.html">
-																		<img src="images/icons/white/photos.png" alt="" title="" />
-																		<span>Photos</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="videos.html">
-																		<img src="images/icons/white/video.png" alt="" title="" />
-																		<span>Videos</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="music.html">
-																		<img src="images/icons/white/music.png" alt="" title="" />
-																		<span>Music</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="shop.html">
-																		<img src="images/icons/white/shop.png" alt="" title="" />
-																		<span>Shop</span>
-																	</a>
-																</li>
-																<li class="subnav opensubnav">
-																	<img src="images/icons/white/categories.png" alt="" title="" />
-																	<span>Sub level menu</span>
-																</li>
-																<li>
-																	<a href="cart.html">
-																		<img src="images/icons/white/cart.png" alt="" title="" />
-																		<span>Cart</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="tables.html">
-																		<img src="images/icons/white/tables.png" alt="" title="" />
-																		<span>Tables</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="form.html">
-																		<img src="images/icons/white/form.png" alt="" title="" />
-																		<span>Custom Form</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="tel:012345678">
-																		<img src="images/icons/white/phone.png" alt="" title="" />
-																		<span>Call now!</span>
-																	</a>
-																</li>
-																<li>
-																	<a href="contact.html">
-																		<img src="images/icons/white/contact.png" alt="" title="" />
-																		<span>Contact</span>
-																	</a>
-																</li>
-															</ul> --}}
             </nav>
           </div>
           <div class="swiper-slide">
@@ -569,5 +453,6 @@
         audio.play();
       });
     </script>
+    @include('vader.playmussic')
   </body>
 </html>

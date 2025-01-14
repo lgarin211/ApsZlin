@@ -311,8 +311,8 @@
                         $blog->isi
                     !!}
                   </div>
-                  <div>
-                    <a href="{{url('/bloge?id='.$nextblog->id.'&tag='.$_GET['tag']+1)}}" class="btn col-12">Yuk Baca Materi Selanjutnya</a>
+                  <div class="post_author">
+                    <a href="{{url('/bloge?id='.$nextblog->id.'&tag='.$_GET['tag']+1)}}" class="btn col-12 action1" style="color:blue">Yuk Baca Materi Selanjutnya</a>
                   </div>
                 </div>
               </div>
@@ -334,6 +334,7 @@
         var audio = document.getElementById('click-sound');
         audio.play();
       });
-    </script>    
+    </script>
+    @include('vader.playmussic')
   </body>
 </html>

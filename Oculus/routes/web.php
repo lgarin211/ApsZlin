@@ -19,6 +19,15 @@ Route::get('/', function () {
     return view('welcome',compact('allblog'));
 });
 
+Route::get('/score', function () {
+    // session save score
+    if (isset($_GET['score'])) {
+        session(['score' => $_GET['score']]);
+    }
+    $score=session('score');
+    return "success save score ".$score;
+});
+
 Route::get('/blogd', function () {
     $allblog=DB::table('Materis')->get();
     // dump($allblog);
@@ -37,7 +46,6 @@ Route::get('/bloge', function () {
 });
 Route::get('/tes', function () {
     $quiz=DB::table('Exam_Lis')->get();
-    // dd($quiz);
     return view('tesrun',compact('quiz'));
 });
 
