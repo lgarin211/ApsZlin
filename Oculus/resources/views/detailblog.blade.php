@@ -312,7 +312,7 @@
                     !!}
                   </div>
                   <div class="post_author">
-                    @if ($nextblog->id!=13)
+                    @if ($_GET['tag']+1<=11)
                         <a href="{{url('/bloge?id='.$nextblog->id.'&tag='.$_GET['tag']+1)}}" class="btn col-12 action1" style="color:blue">Yuk Baca Materi Selanjutnya</a>
                     @else
                         <a href="{{url('/')}}" class="btn col-12 action1" style="color:blue">Kamu Hebat sudah membaca semuanya, Yuk Ikuti Kuiz atau bermain bersama</a>

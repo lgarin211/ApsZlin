@@ -30,14 +30,14 @@ function playAudio() {
 
 function kosi() {
     setTimeout(() => {
-        try {
-            playAudio();
-        }
-        catch (error) {
-            console.log(error);
-            kosi();
-        }
-            }, 1000);
+            try {
+                playAudio();
+            }
+            catch (error) {
+                console.log(error);
+                kosi();
+            }
+    }, 1000);
 }
 
 </script>
