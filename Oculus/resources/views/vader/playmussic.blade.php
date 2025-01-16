@@ -16,16 +16,17 @@ if (session()->has('score')) {
 
 {{-- play audio at  http://127.0.0.1:8000/latar.mp3 in 50% volume --}}
 <div style="display: none">
-    <audio id="audio" controls autoplay loop>
-        <source src="{{ asset('latar.mp3') }}" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    {{-- <audio id="audio" controls autoplay loop> --}}
+        {{-- <source src="{{ asset('latar.mp3') }}" type="audio/mpeg"> --}}
+        {{-- Your browser does not support the audio element. --}}
+    {{-- </audio>    --}}
 </div>
 <script>
 function playAudio() {
-    var x = document.getElementById("audio");
+    // var x = document.getElementById("audio");
     // x.volume = 0.5;
     // x.play();
+    console.log('playAudio');
 }
 
 function kosi() {
