@@ -24,8 +24,8 @@ if (session()->has('score')) {
 <script>
 function playAudio() {
     var x = document.getElementById("audio");
-    x.volume = 0.5;
-    x.play();
+    // x.volume = 0.5;
+    // x.play();
 }
 
 function kosi() {
