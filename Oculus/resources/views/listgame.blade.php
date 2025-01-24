@@ -16,30 +16,27 @@
                 <div id="friendInput" class="mt-3" style="display: none;">
                     <textarea class="form-control" placeholder="Masukkan nama teman-teman lainnya..." rows="3"></textarea>
                     <hr class="col-12">
-        
-                    <!-- Section 2: Grid dengan card game -->
-                    <div class="row">
-                        
-                        @foreach ($gamedata as $game) 
-                        <div class="col-12 col-md-4 mb-3">
-                            <div class="card">
-                                <img src="https://awsimages.detik.net.id/community/media/visual/2019/11/26/02f2b5b1-7bcc-4481-9b9e-dbdb9c726924.jpeg?w=1200" class="card-img-top" alt="Poster Game">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Game {{$game->id}}
-                                    </h5>
-                                    <a class="btn btn-success w-100" href="/play?i={{$game->id}}">Mulai</a>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-
-                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Section 2: Grid dengan card game -->
+        <div class="row">
+            @foreach ($gamedata as $game) 
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2019/11/26/02f2b5b1-7bcc-4481-9b9e-dbdb9c726924.jpeg?w=1200" class="card-img-top" alt="Poster Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Game {{$game->id}}</h5>
+                        <a class="btn btn-success w-100" href="/play?i={{$game->id}}">Mulai</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
     </div>
-      <!-- Footer dengan tombol kembali -->
+
+    <!-- Footer dengan tombol kembali -->
     <div class="footer col-12 text-center fixed-bottom mb-4">
         <a href="/" class="btn btn-warning">Kembali</a>
     </div>

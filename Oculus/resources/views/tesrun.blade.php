@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <!-- SweetAlert2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
     <style>
-        /* Fixed Footer */
         .fixed-footer {
             position: fixed;
             bottom: 0;
@@ -23,11 +21,9 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Soal Pilihan Ganda</h2>
-
         <!-- Nav tabs -->
         <ul class="nav nav-pills justify-content-center" id="quizTabs" role="tablist">
             <li class="nav-item" role="presentation">
@@ -40,7 +36,6 @@
                 <a class="nav-link" id="tab3" data-bs-toggle="pill" href="#content3" role="tab" aria-controls="content3" aria-selected="false">Soal 3</a>
             </li>
         </ul>
-
         <!-- Tab content -->
         <div class="tab-content mt-3" id="quizTabsContent">
             <!-- Soal 1 -->
@@ -67,7 +62,6 @@
                     <button type="button" class="btn btn-primary mt-3" id="nextBtn1" onclick="nextTab(2)">Next</button>
                 </form>
             </div>
-
             <!-- Soal 2 -->
             <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
                 <h4>Soal 2</h4>
@@ -92,7 +86,6 @@
                     <button type="button" class="btn btn-primary mt-3" onclick="nextTab(3)">Next</button>
                 </form>
             </div>
-
             <!-- Soal 3 -->
             <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
                 <h4>Soal 3</h4>
@@ -119,20 +112,16 @@
             </div>
         </div>
     </div>
-
     <!-- Fixed Footer with Timer -->
     <div class="fixed-footer" id="timer">
         <p id="countdown"></p>
     </div>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.js"></script>
-
     <script>
-        // Timer countdown (30 minutes)
         var time = 30 * 60; // 30 minutes in seconds
         var countdownElement = document.getElementById("countdown");
 
@@ -156,11 +145,9 @@
         var timerInterval = setInterval(updateTimer, 1000);
 
         function nextTab(tabNumber) {
-            // Validasi untuk soal 1
             if (tabNumber === 2) {
                 const selectedOption = document.querySelector('input[name="question1"]:checked');
                 if (!selectedOption) {
-                    // Menampilkan SweetAlert jika soal 1 belum dijawab
                     Swal.fire({
                         icon: 'warning',
                         title: 'Oops...',
@@ -169,8 +156,6 @@
                     return;
                 }
             }
-
-            // Pindah ke tab berikutnya
             var myTab = new bootstrap.Tab(document.getElementById('tab' + tabNumber));
             myTab.show();
         }
@@ -185,5 +170,4 @@
         }
     </script>
 </body>
-
 </html>
