@@ -13,7 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900" rel="stylesheet">
 </head>
 <body id="mobile_wrap">
-    @include('vader.SessionPoin')
+    @php
+        if (session()->has('patcing')) {
+            $patcing = session('patcing');
+        } else {
+            session(['patcing' => 0]);
+            $patcing = 0;
+        }
+    @endphp
+
     <div class="panel-overlay"></div>
     <div class="panel panel-left panel-reveal">
         <!-- Slider -->

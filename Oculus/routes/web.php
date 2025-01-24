@@ -20,7 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/score', function () {
-    // session save score
     if (isset($_GET['score'])) {
         session(['score' => $_GET['score']]);
     }

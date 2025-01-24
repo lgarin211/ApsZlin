@@ -51,11 +51,11 @@
                     <form id="startForm">
                         <div class="mb-3">
                             <label for="studentName" class="form-label">Nama Siswa</label>
-                            <input type="text" class="form-control" id="studentName" required>
+                            <input type="text" class="form-control" id="studentName" name="studentName" value="{{ old('studentName', session('studentName')) }}" required>
                         </div>
                         <div class="mb-3">
                             <label for="studentNumber" class="form-label">Nomor Absen</label>
-                            <input type="number" class="form-control" id="studentNumber" required>
+                            <input type="number" class="form-control" id="studentNumber" name="studentNumber" value="{{ old('studentNumber', session('studentNumber')) }}" required>
                         </div>
                         <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox" id="honestyCheck" required>
@@ -65,9 +65,10 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Mulai</button>
 
-                        <div>
-                            @if (session()->has('score')&&session('score')!=0)
-                                <h3>NILAI SEBELUMNYA {{session('score')}} </h3>
+                        <div class="text-center mt-3">
+                            @if (session()->has('score') && session('score') != 0)
+                                <h3>NILAI SEBELUMNYA </h3>
+                                <h1 style="font-size:10rem;color: {{ session('score') > 60 ? 'green' : 'red' }};">{{ session('score') }}</h1>
                             @endif
                         </div>
                     </form>
