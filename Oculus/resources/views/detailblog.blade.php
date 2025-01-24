@@ -1,10 +1,5 @@
 @php
-    if(session()->has('patcing')){
-        session(['patcing' => $_GET['tag']]);
-    }else{
-        session(['patcing' => 0]);
-        $patcing = 0;
-    }
+session(['patcing' => $_GET['tag'] ?? session('patcing', 0)]);
 @endphp
 
 <!DOCTYPE html>
