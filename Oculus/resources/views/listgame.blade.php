@@ -12,15 +12,16 @@
         <!-- Section 1: Silahkan pilih game kesukaanmu -->
         <div class="row mb-3">
             <div class="col-12 text-center">
-                <h3>Silahkan pilih game kesukaanmu</h3>
-                <button id="selectGameBtn" class="btn btn-primary mt-3">Pilih Game</button>
-                <div id="friendInput" class="mt-3" style="display: none;">
-                    <textarea class="form-control" placeholder="Masukkan nama teman-teman lainnya..." rows="3"></textarea>
+                <h3>Silahkan masukkan nama para pemain</h3>
+                <form id="playerForm">
+                    <textarea class="form-control" placeholder="Masukkan nama teman-teman lainnya..." rows="3" required></textarea>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+                <div id="gameList" class="mt-3" style="display: none;">
                     <hr class="col-12">
-
+                    <h3>Pilih game kesukaanmu</h3>
                     <!-- Section 2: Grid dengan card game -->
                     <div class="row">
-
                         @foreach ($gamedata as $game)
                         <div class="col-12 col-md-4 mb-3">
                             <div class="card">
@@ -34,7 +35,6 @@
                             </div>
                         </div>
                         @endforeach
-
                     </div>
                 </div>
             </div>
@@ -47,9 +47,10 @@
 
     <script>
         // JavaScript untuk mengatur textarea
-        document.getElementById('selectGameBtn').addEventListener('click', function () {
-            const friendInput = document.getElementById('friendInput');
-            friendInput.style.display = friendInput.style.display === 'none' ? 'block' : 'none';
+        document.getElementById('playerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const gameList = document.getElementById('gameList');
+            gameList.style.display = 'block';
         });
     </script>
         <audio id="click-sound" src="https://www.myinstants.com/media/sounds/switch-sound.mp3"></audio>
