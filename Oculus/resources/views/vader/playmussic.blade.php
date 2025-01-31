@@ -6,7 +6,7 @@ $score = session('score', 0);
 {{-- play audio at  http://127.0.0.1:8000/latar.mp3 in 50% volume --}}
 <div style="display: none">
     <audio id="audio" controls autoplay loop> 
-        <source src="{{ asset('latar.mp3') }}" type="audio/mpeg"> 
+        <source src="{{ asset('latar2.mp3') }}" type="audio/mpeg"> 
         Your browser does not support the audio element. 
     </audio>    
 </div>
