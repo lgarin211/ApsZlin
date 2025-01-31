@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
-    FROM php:7-cli
+    FROM php:8.2-cli
 
     # Avoid warnings by switching to noninteractive
     ENV DEBIAN_FRONTEND=noninteractive
@@ -19,7 +19,7 @@
     # Configure apt and install packages
     RUN apt-get update \
         && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
-        && apt-get -y install curl git iproute2 procps lsb-release unzip zip openssl gnupg \
+        && apt-get -y install curl git iproute2 procps lsb-release unzip zip openssl gnupg mysql-client \
     
         # Install xdebug
         #&& yes | pecl install xdebug \
