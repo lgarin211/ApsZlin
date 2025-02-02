@@ -17,8 +17,8 @@
         if (session()->has('patcing')) {
             $patcing = session('patcing');
         } else {
-            session(['patcing' => 0]);
-            $patcing = 0;
+            session(['patcing' => 11]);
+            $patcing = 11;
         }
     @endphp
 
