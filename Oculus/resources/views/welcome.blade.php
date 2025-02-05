@@ -306,7 +306,8 @@
                         <img src="images/icons/blue/tables.png" alt="" title="" />
                         <span>Materi</span>
                     </a>
-                    @if($patcing > count($allblog))
+                    {{-- @dump(count($allblog))   --}}
+                    @if($patcing >= count($allblog))
                     <a href="/gamepot">
                         <img src="images/icons/blue/blog.png" alt="" title="" />
                         <span>Game's</span>
