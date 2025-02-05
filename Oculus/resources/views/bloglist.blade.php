@@ -29,19 +29,19 @@
             <nav class="main_nav_underline">
               <ul>
                 <li>
-                  <a href="index.html">
+                  <a href="/">
                     <img src="images/icons/white/home.png" alt="" title="" />
                     <span>Home</span>
                   </a>
                 </li>
                 <li>
-                  <a href="about.html">
+                  <a href="/">
                     <img src="images/icons/white/mobile.png" alt="" title="" />
                     <span>About</span>
                   </a>
                 </li>
                 <li>
-                  <a href="features.html">
+                  <a href="/">
                     <img src="images/icons/white/features.png" alt="" title="" />
                     <span>Features</span>
                   </a>
@@ -251,33 +251,33 @@
         <nav class="user-nav">
           <ul>
             <li>
-              <a href="features.html">
+              <a href="/">
                 <img src="images/icons/white/settings.png" alt="" title="" />
                 <span>Account Settings</span>
               </a>
             </li>
             <li>
-              <a href="features.html">
+              <a href="/">
                 <img src="images/icons/white/briefcase.png" alt="" title="" />
                 <span>My Account</span>
               </a>
             </li>
             <li>
-              <a href="features.html">
+              <a href="/">
                 <img src="images/icons/white/message.png" alt="" title="" />
                 <span>Messages</span>
                 <strong>12</strong>
               </a>
             </li>
             <li>
-              <a href="features.html">
+              <a href="/">
                 <img src="images/icons/white/love.png" alt="" title="" />
                 <span>Favorites</span>
                 <strong>5</strong>
               </a>
             </li>
             <li>
-              <a href="index.html">
+              <a href="/">
                 <img src="images/icons/white/lock.png" alt="" title="" />
                 <span>Logout</span>
               </a>
