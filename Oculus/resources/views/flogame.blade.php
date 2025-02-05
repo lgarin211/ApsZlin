@@ -43,5 +43,6 @@
         audio.play();
       });
     </script>
+    @include('vader.playmussic')
 </body>
 </html>

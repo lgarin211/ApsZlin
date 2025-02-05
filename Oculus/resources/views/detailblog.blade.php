@@ -1,10 +1,5 @@
 @php
-    if(session()->has('patcing')){
-        session(['patcing' => $_GET['tag']]);
-    }else{
-        session(['patcing' => 0]);
-        $patcing = 0;
-    }
+session(['patcing' => $_GET['tag'] ?? session('patcing', 0)]);
 @endphp
 
 <!DOCTYPE html>
@@ -311,8 +306,12 @@
                         $blog->isi
                     !!}
                   </div>
-                  <div>
-                    <a href="{{url('/bloge?id='.$nextblog->id.'&tag='.$_GET['tag']+1)}}" class="btn col-12">Yuk Baca Materi Selanjutnya</a>
+                  <div class="post_author">
+                    @if ($_GET['tag']+1<=11)
+                        <a href="{{url('/bloge?id='.$nextblog->id.'&tag='.$_GET['tag']+1)}}" class="btn col-12 action1" style="color:blue">Yuk Baca Materi Selanjutnya</a>
+                    @else
+                        <a href="{{url('/')}}" class="btn col-12 action1" style="color:blue">Kamu Hebat sudah membaca semuanya, Yuk Ikuti Kuiz atau bermain bersama</a>
+                    @endif
                   </div>
                 </div>
               </div>
@@ -335,5 +334,6 @@
         audio.play();
       });
     </script>
+    @include('vader.playmussic')
   </body>
 </html>

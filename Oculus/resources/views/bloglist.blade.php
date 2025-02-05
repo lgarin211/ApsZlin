@@ -22,7 +22,6 @@
   <body id="mobile_wrap">
     <div class="panel-overlay"></div>
     <div class="panel panel-left panel-reveal">
-      <!-- Slider -->
       <div class="swiper-container-subnav multinav">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -286,6 +285,9 @@
         </nav>
       </div>
     </div>
+    @php
+        $patcing = session('patcing', 0);
+    @endphp
     <div class="views">
       <div class="view view-main">
         <div class="pages">
@@ -299,40 +301,13 @@
                     </a>
                   </div>
                 </div>
-                {{-- <div class="navbar_right navbar_right_menu">
-                  <a href="#" data-panel="left" class="open-panel">
-                    <img src="images/icons/white/menu.png" alt="" title="" />
-                  </a>
-                </div>
-                <div class="navbar_right">
-                  <a href="#" data-panel="right" class="open-panel">
-                    <img src="images/icons/white/user.png" alt="" title="" />
-                  </a>
-                </div>
-                <div class="navbar_right">
-                  <a href="cart.html" data-view=".view-main">
-                    <img src="images/icons/white/cart.png" alt="" title="" />
-                    <span>3</span>
-                  </a>
-                </div> --}}
               </div>
               <div id="pages_maincontent">
                 <h2 class="page_title">Materi Menuju Kemerdekaan</h2>
                 <div class="page_single layout_fullwidth_padding">
                   <ul class="posts">
-
-{{-- loop --}}
-                    @php
-                        if(session()->has('patcing')){
-                            $patcing = session('patcing');
-                        }else{
-                            session(['patcing' => 0]);
-                            $patcing = 0;
-                        }
-                    @endphp
                     @foreach ($allblog as $key=>$m)
-                    @dump(($patcing < $key))
-                    <li class="swipeout @if($patcing < $key): no-click @endif">
+                    <li class="swipeout @if($patcing < $key) no-click @endif">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide swipeout-content item-content">
                             <div class="post_entry">
@@ -341,10 +316,10 @@
                               </div>
                               <div class="post_details">
                                 <div class="post_category">
-                                  <a href="{{url('/bloge?id='.$m->id.'&tag='.$key+1)}}">{{$m->judul}}</a>
+                                  <a href="{{url('/bloge?id='.$m->id.'&tag='.($key+1))}}">{{$m->judul}}</a>
                                 </div>
                                 <h2>
-                                  <a href="{{url('/bloge?id='.$m->id.'&tag='.$key+1)}}">{{$m->simply}}.</a>
+                                  <a href="{{url('/bloge?id='.$m->id.'&tag='.($key+1))}}">{{$m->simply}}.</a>
                                 </h2>
                               </div>
                               <div class="post_swipe">
@@ -353,7 +328,7 @@
                             </div>
                           </div>
                           <div class="swiper-slide swipeout-actions-right">
-                            <a href="{{url('/bloge?id='.$m->id.'&tag='.$key+1)}}" class="action1">
+                            <a href="{{url('/bloge?id='.$m->id.'&tag='.($key+1))}}" class="action1">
                               <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linetype-icon/eye-43.png" alt="" title="" />
                             </a>
 
@@ -361,7 +336,6 @@
                         </div>
                     </li>
                     @endforeach
-{{-- loophere --}}
                   </ul>
                   <div id="loadMore">LOAD MORE</div>
                   <div id="showLess">END</div>
@@ -372,7 +346,6 @@
         </div>
       </div>
     </div>
-    s
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -384,5 +357,6 @@
         audio.play();
       });
     </script>
+    @include('vader.playmussic')
   </body>
 </html>
