@@ -200,7 +200,7 @@
               <div class="navbarpages">
                 <div class="navbar_left">
                   <div class="logo_text">
-                    <a href="index.html">IPS Merdeka</a>
+                    <a href="index.html">Journey to Merdeka</a>
                   </div>
                 </div>
               </div>
